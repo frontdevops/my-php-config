@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 
 ### BEGIN INIT INFO
 # Provides:          php-fpm
@@ -50,7 +50,7 @@ wait_for_pid()
 
 check_session_dir()
 {
-	php_sd=${1?"Empty php sesseion dir name!"}
+	php_sdir=${1?"Empty php sesseion dir name!"}
 	
 	if [ ! -f "$php_sdir" ]
 	then
@@ -63,6 +63,8 @@ check_session_dir()
 # Main
 #
 check_session_dir $php_session_dir
+
+exit
 
 case "$1" in
 	start)
