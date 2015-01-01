@@ -1,0 +1,50 @@
+./configure \
+	--prefix=/opt/php/php-5.6 \
+	--with-config-file-path=/etc/php/fastcgi \
+	--with-config-file-scan-dir=/etc/php/fastcgi/conf.d \
+	--with-libdir=lib64 \
+\
+	--with-openssl \
+	--with-curl \
+	--with-imap \
+	--with-imap-ssl \
+	--with-mcrypt \
+	--with-gettext \
+	--with-readline \
+	--with-curl \
+	--with-gd \
+	--with-iconv \
+	--with-mcrypt \
+	--with-bz2 \
+	--with-kerberos \
+	--with-mysql \
+	--with-zlib-dir \
+	--with-jpeg-dir \
+	--with-png-dir \
+	--with-libxml-dir \
+	--with-freetype-dir \
+	--with-mysqli=mysqlnd \
+	--with-pdo-mysql=mysqlnd \
+	--with-fpm-user=www \
+	--with-fpm-group=www \
+\
+	--disable-rpath \
+\
+	--enable-gd-native-ttf \
+	--enable-calendar \
+	--enable-mbstring \
+	--enable-json \
+	--enable-zip \
+	--enable-mbregex \
+	--enable-exif \
+	--enable-bcmath \
+	--with-mhash \
+	--enable-ftp \
+	--enable-sockets \
+	--enable-pcntl \
+	--enable-sysvsem \
+	--enable-sysvshm \
+	--enable-fpm \
+	--enable-opcache \
+	--enable-inline-optimization \
+\
