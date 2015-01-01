@@ -52,7 +52,7 @@ check_session_dir()
 {
 	php_sdir=${1?"Empty php sesseion dir name!"}
 	
-	if [ ! -f "$php_sdir" ]
+	if [ ! -d "$php_sdir" ]
 	then
 		mkdir -v $php_sdir
 		chmod 777 $php_sdir
@@ -63,8 +63,6 @@ check_session_dir()
 # Main
 #
 check_session_dir $php_session_dir
-
-exit
 
 case "$1" in
 	start)
