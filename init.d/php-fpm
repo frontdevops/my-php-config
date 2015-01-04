@@ -55,6 +55,7 @@ check_session_dir()
 	if [ ! -d "$php_sdir" ]
 	then
 		mkdir -v $php_sdir
+		chown root:www $php_sdir
 		chmod 777 $php_sdir
 	fi
 }
